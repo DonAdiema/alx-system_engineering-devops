@@ -1,4 +1,2 @@
 #!/bin/bash
-
-# Use find to locate and delete .js files
 find . -type f -name "*.js" -delete

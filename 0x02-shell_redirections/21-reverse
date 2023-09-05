@@ -1,11 +1,2 @@
 #!/bin/bash
-
-# Function to reverse input
-function reverse_input {
-    input="$1"
-    echo "$input" | rev
-}
-
-# Call the function with input
-input="Hello, World!"
-reverse_input "$input"
+cut -d ':' -f 1,6 /etc/passwd | sort

@@ -1,9 +1,2 @@
 #!/bin/bash
-
-# Function to display users and their home directories, sorted by users
-function display_users_and_home_directories {
-    awk -F: '{print "User: " $1 ", Home Directory: " $6}' /etc/passwd | sort
-}
-
-# Call the function
-display_users_and_home_directories
+cut -d ':' -f 1,6 /etc/passwd | sort

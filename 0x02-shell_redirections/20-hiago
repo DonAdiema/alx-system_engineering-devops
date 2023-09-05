@@ -1,13 +1,2 @@
 #!/bin/bash
-
-# Function to replace characters A with Z and c with e
-function replace_chars {
-    input="$1"
-    output="${input//A/Z}"
-    output="${output//c/e}"
-    echo "$output"
-}
-
-# Call the function with input
-input="AccePt"
-replace_chars "$input"
+rev

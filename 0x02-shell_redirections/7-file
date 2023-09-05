@@ -1,10 +1,2 @@
 #!/bin/bash
-
-# Define the file name
-file_name='*\\'"Best School"'\\*$?*****:)'
-
-# Define the content
-content="Best School\n"
-
-# Use echo to create the file with the specified content
-echo -e "$content" > "$file_name"
+echo "Best School" > \\\*\\\\"'\"Best School\"\\'"\\\\\*\$\\\?\\\*\\\*\\\*\\\*\\\*\:\)
