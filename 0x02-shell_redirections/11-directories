@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# Use find to count directories and exclude current and parent directories
+count=$(find . -mindepth 1 -type d | wc -l)
+
+# Subtract 2 to exclude the current and parent directories
+count=$((count - 2))
+
+# Print the result
+echo "Number of directories and subdirectories: $count"

@@ -1,0 +1,4 @@
+#!/bin/bash
+
+# Use ls to list files by modification time (newest first) and display the 10 newest files
+ls -t | head -n 10

@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# Read the TSV log file and extract the host/IP column
+awk '{print $1}' input.log |
+# Sort the hosts/IPs and count their occurrences
+sort |
+uniq -c |
+# Sort the counts in reverse order and display the top 11
+sort -nr |
+head -n 11

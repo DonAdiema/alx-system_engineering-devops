@@ -1,0 +1,9 @@
+#!/bin/bash
+
+# Function to display lines starting with a letter from sshd_config
+function display_lines_with_letter {
+    grep "^[a-zA-Z]" /etc/ssh/sshd_config
+}
+
+# Call the function
+display_lines_with_letter

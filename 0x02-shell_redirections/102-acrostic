@@ -1,0 +1,16 @@
+#!/bin/bash
+
+# Initialize the decoded message as an empty string
+decoded_message=""
+
+# Read each line and extract the first character
+while IFS= read -r line; do
+    # Check if the line is not empty
+    if [[ -n "$line" ]]; then
+        first_char="${line:0:1}"  # Extract the first character of the line
+        decoded_message="${decoded_message}${first_char}"
+    fi
+done
+
+# Print the decoded message with a newline at the end
+echo -e "$decoded_message"

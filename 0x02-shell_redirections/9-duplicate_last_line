@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# Check if the file "iacta" exists
+if [ -e "iacta" ]; then
+    # Get the last line of the file and append it to the file
+    last_line=$(tail -n 1 "iacta")
+    echo "$last_line" >> "iacta"
+else
+    echo "File 'iacta' does not exist."
+fi
+
